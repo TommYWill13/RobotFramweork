@@ -1,3 +1,0 @@
-{"level":30,"time":"2025-05-08T05:50:48.898Z","pid":24888,"hostname":"COB-C-016E7","msg":"Listening on 127.0.0.1:64244"}
-(node:24888) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
-(Use `node --trace-deprecation ...` to show where the warning was created)

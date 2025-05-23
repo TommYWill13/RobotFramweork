@@ -1,0 +1,51 @@
+{"level":30,"time":"2025-05-05T08:14:03.694Z","pid":14952,"hostname":"COB-C-016E7","msg":"Listening on 127.0.0.1:60326"}
+(node:14952) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-05T08:14:04.189Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-05T08:14:04.509Z","pid":14952,"hostname":"COB-C-016E7","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-05T08:14:04.509Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-05T08:14:04.509Z","pid":14952,"hostname":"COB-C-016E7","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-05T08:14:04.513Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-05T08:14:04.513Z","pid":14952,"hostname":"COB-C-016E7","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":720,\"width\":1280}}"}
+{"level":30,"time":"2025-05-05T08:14:04.513Z","pid":14952,"hostname":"COB-C-016E7","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-05T08:14:04.513Z","pid":14952,"hostname":"COB-C-016E7","msg":"Trace file: "}
+{"level":30,"time":"2025-05-05T08:14:04.524Z","pid":14952,"hostname":"COB-C-016E7","msg":"Changed active context"}
+{"level":30,"time":"2025-05-05T08:14:04.524Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-05T08:14:04.530Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-05T08:14:04.530Z","pid":14952,"hostname":"COB-C-016E7","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-05T08:14:04.700Z","pid":14952,"hostname":"COB-C-016E7","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-05T08:14:04.700Z","pid":14952,"hostname":"COB-C-016E7","msg":"Changed active page"}
+{"level":30,"time":"2025-05-05T08:14:06.782Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-05T08:14:06.787Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method waitForAlerts"}
+{"level":30,"time":"2025-05-05T08:14:06.787Z","pid":14952,"hostname":"COB-C-016E7","msg":"Waiting for alert with action: accept, promptInput: \"\" and timeout: 10000"}
+{"level":30,"time":"2025-05-05T08:14:06.788Z","pid":14952,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #alertBtn in page."}
+{"level":30,"time":"2025-05-05T08:14:06.788Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-05T08:14:09.771Z","pid":14952,"hostname":"COB-C-016E7","msg":"Removed page=db30b924-ae87-4058-ba77-b73971a8252c from context=3816aa5e-8c4d-493f-bf21-81be5404d21e page stack"}
+{"level":30,"time":"2025-05-05T08:14:09.772Z","pid":14952,"hostname":"COB-C-016E7","msg":"Error of node method waitForAlerts"}
+================= Original suppressed error =================
+page.waitForEvent: Target page, context or browser has been closed
+=========================== logs ===========================
+waiting for event "dialog"
+============================================================
+    at waitForAlerts (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11982:37)
+    at PlaywrightServer.waitForAlerts (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13163:34)
+    at Object.onReceiveHalfClose (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+=============================================================
+{"level":40,"time":"2025-05-05T08:14:09.773Z","pid":14952,"hostname":"COB-C-016E7","msg":"Supress locator.click: Target page, context or browser has been closed error"}
+{"level":30,"time":"2025-05-05T08:14:09.773Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method click"}
+{"level":30,"time":"2025-05-05T08:14:09.861Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.861Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.864Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.864Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.867Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.867Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.870Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.870Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T08:14:09.872Z","pid":14952,"hostname":"COB-C-016E7","msg":"Changed active context"}
+{"level":30,"time":"2025-05-05T08:14:09.873Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-05T08:14:09.881Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-05T08:14:09.983Z","pid":14952,"hostname":"COB-C-016E7","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-05T08:14:10.255Z","pid":14952,"hostname":"COB-C-016E7","msg":"End of node method closeAllBrowsers"}

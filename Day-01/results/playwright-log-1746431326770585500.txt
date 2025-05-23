@@ -1,0 +1,77 @@
+{"level":30,"time":"2025-05-05T07:48:48.615Z","pid":10624,"hostname":"COB-C-016E7","msg":"Listening on 127.0.0.1:57172"}
+(node:10624) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-05T07:48:49.196Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-05T07:48:49.546Z","pid":10624,"hostname":"COB-C-016E7","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-05T07:48:49.546Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-05T07:48:49.546Z","pid":10624,"hostname":"COB-C-016E7","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-05T07:48:49.551Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-05T07:48:49.551Z","pid":10624,"hostname":"COB-C-016E7","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":true,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2025-05-05T07:48:49.551Z","pid":10624,"hostname":"COB-C-016E7","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-05T07:48:49.551Z","pid":10624,"hostname":"COB-C-016E7","msg":"Trace file: "}
+{"level":30,"time":"2025-05-05T07:48:49.559Z","pid":10624,"hostname":"COB-C-016E7","msg":"Changed active context"}
+{"level":30,"time":"2025-05-05T07:48:49.559Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-05T07:48:49.562Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-05T07:48:49.562Z","pid":10624,"hostname":"COB-C-016E7","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-05T07:48:49.755Z","pid":10624,"hostname":"COB-C-016E7","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-05T07:48:49.755Z","pid":10624,"hostname":"COB-C-016E7","msg":"Changed active page"}
+{"level":30,"time":"2025-05-05T07:48:53.692Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-05T07:48:53.697Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:48:53.700Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:48:53.703Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2025-05-05T07:48:53.703Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+{"level":30,"time":"2025-05-05T07:48:53.749Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2025-05-05T07:48:53.753Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-05T07:48:53.753Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+{"level":30,"time":"2025-05-05T07:48:53.767Z","pid":10624,"hostname":"COB-C-016E7","msg":"Option entries: 10"}
+{"level":30,"time":"2025-05-05T07:48:53.767Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-05T07:48:53.767Z","pid":10624,"hostname":"COB-C-016E7","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-05T07:48:53.770Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2025-05-05T07:48:53.770Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+{"level":30,"time":"2025-05-05T07:48:53.780Z","pid":10624,"hostname":"COB-C-016E7","msg":"Option entries: 10"}
+{"level":30,"time":"2025-05-05T07:48:53.780Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2025-05-05T07:48:53.780Z","pid":10624,"hostname":"COB-C-016E7","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-05T07:48:53.785Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-05T07:48:53.785Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+{"level":30,"time":"2025-05-05T07:48:53.797Z","pid":10624,"hostname":"COB-C-016E7","msg":"Option entries: 10"}
+{"level":30,"time":"2025-05-05T07:48:53.797Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-05T07:48:53.797Z","pid":10624,"hostname":"COB-C-016E7","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-05T07:48:53.800Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2025-05-05T07:48:53.800Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+{"level":30,"time":"2025-05-05T07:48:53.810Z","pid":10624,"hostname":"COB-C-016E7","msg":"Option entries: 10"}
+{"level":30,"time":"2025-05-05T07:48:53.810Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2025-05-05T07:48:53.810Z","pid":10624,"hostname":"COB-C-016E7","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-05T07:48:53.815Z","pid":10624,"hostname":"COB-C-016E7","msg":"unparsed args: e => e.selected, #country, {}"}
+{"level":30,"time":"2025-05-05T07:48:53.815Z","pid":10624,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with #country in page."}
+================= Original suppressed error =================
+page.waitForFunction: Timeout 10000ms exceeded.
+    at waitForFunction (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11301:29)
+    at async PlaywrightServer.waitForFunction (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13418:22) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-05-05T07:49:03.847Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-05-05T07:49:03.847Z","pid":10624,"hostname":"COB-C-016E7","Take screenshot with options: ":{"path":"C:\\Automation\\Robot_Framework\\Day-01\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-05-05T07:49:03.945Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-05-05T07:49:11.218Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:49:11.220Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:49:11.224Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-05-05T07:49:11.233Z","pid":10624,"hostname":"COB-C-016E7","msg":"Removed page=2a54498b-e2cc-4d37-8b07-b2d75ddf0b07 from context=b12bf852-3a2b-422b-b234-5624a6557a74 page stack"}
+{"level":30,"time":"2025-05-05T07:49:11.645Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-05-05T07:49:11.663Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:49:11.663Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-05T07:49:11.961Z","pid":10624,"hostname":"COB-C-016E7","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-05T07:49:11.961Z","pid":10624,"hostname":"COB-C-016E7","msg":"End of node method closeAllBrowsers"}

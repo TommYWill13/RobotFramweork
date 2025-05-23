@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-06T10:09:36.073125" rpa="false" schemaversion="5">
+<suite id="s1" name="Day-02" source="C:\Automation\Robot_Framework\Day-02">
+<suite id="s1-s1" name="Testscripts" source="C:\Automation\Robot_Framework\Day-02\testscripts">
+<suite id="s1-s1-s1" name="Windowpopup" source="C:\Automation\Robot_Framework\Day-02\testscripts\windowpopup.robot">
+<test id="s1-s1-s1-t1" name="HandleWindowPopup Test" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-06T10:09:36.327272" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Automation\\Robot_Framework\\Day-02\\results\\browser\\traces\\temp\\6cf48445-6d5b-45d1-ade4-649496781c07"}</msg>
+<msg time="2025-05-06T10:09:36.571019" level="INFO">Starting Browser process C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52427</msg>
+<msg time="2025-05-06T10:09:39.582826" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Automation\\Robot_Framework\\Day-02\\results\\browser\\traces\\temp\\6cf48445-6d5b-45d1-ade4-649496781c07"}</msg>
+<arg>${browser}</arg>
+<arg>headless=${False}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-06T10:09:36.326432" elapsed="3.256785"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-06T10:09:39.585205" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2025-05-06T10:09:39.598678" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-06T10:09:39.599541" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-06T10:09:39.583801" elapsed="0.016192"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-06T10:09:45.920956" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/windows</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-06T10:09:39.600593" elapsed="6.320733"/>
+</kw>
+<kw name="Get Page Ids" owner="Browser">
+<msg time="2025-05-06T10:09:45.927932" level="INFO">@{parentid} = [ page=875c5e55-53bd-4c79-8878-797923acb7cb ]</msg>
+<var>@{parentid}</var>
+<arg>ACTIVE</arg>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<status status="PASS" start="2025-05-06T10:09:45.921614" elapsed="0.006539"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-06T10:09:45.929121" level="INFO">Clicks the element 'text=/^Click Here/'.</msg>
+<arg>text=/^Click Here/</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-06T10:09:45.928453" elapsed="0.077545"/>
+</kw>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-05-06T10:09:46.007117" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2025-05-06T10:09:46.298653" level="INFO">Activated new page page=2de47690-f04a-4a80-8256-3833eb06b8e8</msg>
+<msg time="2025-05-06T10:09:46.299250" level="INFO">${childwinHandle} = page=875c5e55-53bd-4c79-8878-797923acb7cb</msg>
+<var>${childwinHandle}</var>
+<arg>NEW</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-05-06T10:09:46.006363" elapsed="0.293172"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-06T10:09:51.301215" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-06T10:09:46.300045" elapsed="5.001515"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-05-06T10:09:51.308845" level="INFO">Title: 'New Window'</msg>
+<arg>==</arg>
+<arg>New Window</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-05-06T10:09:51.301932" elapsed="0.007273"/>
+</kw>
+<kw name="Get Page Ids" owner="Browser">
+<msg time="2025-05-06T10:09:51.313862" level="INFO">@{pageids} = [ page=2de47690-f04a-4a80-8256-3833eb06b8e8 ]</msg>
+<var>@{pageids}</var>
+<arg>ACTIVE</arg>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<status status="PASS" start="2025-05-06T10:09:51.309455" elapsed="0.004623"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-06T10:09:51.314849" level="INFO">['page=2de47690-f04a-4a80-8256-3833eb06b8e8']</msg>
+<arg>${pageids}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-06T10:09:51.314378" elapsed="0.000779"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-06T10:09:56.316112" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-06T10:09:51.315483" elapsed="5.001170"/>
+</kw>
+<kw name="Close Page" owner="Browser">
+<msg time="2025-05-06T10:09:56.321284" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2025-05-06T10:09:56.323601" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2025-05-06T10:09:56.324105" level="INFO">Switching browser to browser=c28e09d7-f4f6-4ada-bb45-867e090ae0c7</msg>
+<msg time="2025-05-06T10:09:56.326339" level="INFO">Successfully changed active browser: browser=c28e09d7-f4f6-4ada-bb45-867e090ae0c7</msg>
+<msg time="2025-05-06T10:09:56.326843" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2025-05-06T10:09:56.332272" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2025-05-06T10:09:56.332690" level="INFO">Switching context to context=861606eb-bad6-4e28-9674-368f2915408d in CURRENT</msg>
+<msg time="2025-05-06T10:09:56.338573" level="INFO">Successfully changed active context: context=861606eb-bad6-4e28-9674-368f2915408d</msg>
+<msg time="2025-05-06T10:09:56.352630" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<status status="PASS" start="2025-05-06T10:09:56.317049" elapsed="0.036032"/>
+</kw>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-05-06T10:09:56.354347" level="INFO">Switching to page page=875c5e55-53bd-4c79-8878-797923acb7cb,context CURRENT, browser CURRENT</msg>
+<msg time="2025-05-06T10:09:56.359781" level="INFO">Successfully changed active page: page=875c5e55-53bd-4c79-8878-797923acb7cb</msg>
+<arg>${parentid}[0]</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-05-06T10:09:56.353395" elapsed="0.006685"/>
+</kw>
+<msg time="2025-05-06T10:09:56.370919" level="INFO">Switching context to context=861606eb-bad6-4e28-9674-368f2915408d in CURRENT</msg>
+<msg time="2025-05-06T10:09:56.376075" level="INFO">Successfully changed active context: context=861606eb-bad6-4e28-9674-368f2915408d</msg>
+<msg time="2025-05-06T10:09:56.393740" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-05-06T10:09:36.325308" elapsed="20.035295"/>
+</test>
+<status status="PASS" start="2025-05-06T10:09:36.110288" elapsed="20.284577"/>
+</suite>
+<status status="PASS" start="2025-05-06T10:09:36.108242" elapsed="20.291163"/>
+</suite>
+<status status="PASS" start="2025-05-06T10:09:36.086649" elapsed="20.313630"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Day-02" id="s1" pass="1" fail="0" skip="0">Day-02</stat>
+<stat name="Testscripts" id="s1-s1" pass="1" fail="0" skip="0">Day-02.Testscripts</stat>
+<stat name="Windowpopup" id="s1-s1-s1" pass="1" fail="0" skip="0">Day-02.Testscripts.Windowpopup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

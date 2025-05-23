@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-07T12:06:29.774112" rpa="false" schemaversion="5">
+<suite id="s1" name="Day-03" source="C:\Automation\Robot_Framework\Day-03">
+<suite id="s1-s1" name="Testscripts" source="C:\Automation\Robot_Framework\Day-03\testscripts">
+<suite id="s1-s1-s1" name="TagsTC" source="C:\Automation\Robot_Framework\Day-03\testscripts\TagsTC.robot">
+<test id="s1-s1-s1-t1" name="No own tags" line="11">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2025-05-07T12:06:29.809713" elapsed="0.000268"/>
+</kw>
+<doc>This test has tags owner-john, smoke and req-42.</doc>
+<tag>owner-john</tag>
+<tag>req-42</tag>
+<tag>smoketest</tag>
+<status status="PASS" start="2025-05-07T12:06:29.808686" elapsed="0.001499"/>
+</test>
+<status status="PASS" start="2025-05-07T12:06:29.806207" elapsed="0.004898"/>
+</suite>
+<status status="PASS" start="2025-05-07T12:06:29.804250" elapsed="0.007900"/>
+</suite>
+<status status="PASS" start="2025-05-07T12:06:29.782081" elapsed="0.030861"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">owner-john</stat>
+<stat pass="1" fail="0" skip="0">req-42</stat>
+<stat pass="1" fail="0" skip="0">smoketest</stat>
+</tag>
+<suite>
+<stat name="Day-03" id="s1" pass="1" fail="0" skip="0">Day-03</stat>
+<stat name="Testscripts" id="s1-s1" pass="1" fail="0" skip="0">Day-03.Testscripts</stat>
+<stat name="TagsTC" id="s1-s1-s1" pass="1" fail="0" skip="0">Day-03.Testscripts.TagsTC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

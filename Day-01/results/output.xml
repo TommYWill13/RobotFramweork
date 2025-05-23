@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-07T11:09:06.494367" rpa="false" schemaversion="5">
+<suite id="s1" name="Day-01" source="C:\Automation\Robot_Framework\Day-01">
+<suite id="s1-s1" name="Testscripts" source="C:\Automation\Robot_Framework\Day-01\testscripts">
+<suite id="s1-s1-s1" name="FirstTC" source="C:\Automation\Robot_Framework\Day-01\testscripts\FirstTC.robot">
+<test id="s1-s1-s1-t1" name="Valid Login Test" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-07T11:09:06.819330" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Automation\\Robot_Framework\\Day-01\\results\\browser\\traces\\temp\\3c278f60-51b9-4796-bd0b-1596e9aafba1"}</msg>
+<msg time="2025-05-07T11:09:07.505488" level="INFO">Starting Browser process C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58118</msg>
+<msg time="2025-05-07T11:09:10.280568" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-05-07T11:09:10.280980" level="INFO">See also file:///C:/Automation/Robot_Framework/Day-01/results/playwright-log.txt for additional details.</msg>
+<msg time="2025-05-07T11:09:10.281763" level="FAIL">Error: browserType.launch: Executable doesn't exist at C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1169\chrome-win\chrome.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ &lt;3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</msg>
+<arg>${browser}</arg>
+<arg>headless=${False}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2025-05-07T11:09:06.817767" elapsed="3.472901">Error: browserType.launch: Executable doesn't exist at C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1169\chrome-win\chrome.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ &lt;3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</status>
+</kw>
+<kw name="New Context" owner="Browser">
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.291266" elapsed="0.000457"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>https://the-internet.herokuapp.com/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.292329" elapsed="0.000423"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>\#username</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.293096" elapsed="0.000416"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>\#password</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.293864" elapsed="0.000416"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>\#login &gt;&gt; .radius</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.294517" elapsed="0.000347"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<var>${pagetitle}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.295199" elapsed="0.000412"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${pagetitle}</arg>
+<arg>The Internet</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.295941" elapsed="0.000423"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.296698" elapsed="0.000414"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<var>${url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.297554" elapsed="0.000609"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>secure</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.298688" elapsed="0.000549"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T11:09:10.299548" elapsed="0.000443"/>
+</kw>
+<status status="FAIL" start="2025-05-07T11:09:06.814044" elapsed="3.486221">Error: browserType.launch: Executable doesn't exist at C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1169\chrome-win\chrome.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ &lt;3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝</status>
+</test>
+<status status="FAIL" start="2025-05-07T11:09:06.547469" elapsed="3.781626"/>
+</suite>
+<status status="FAIL" start="2025-05-07T11:09:06.544721" elapsed="3.812807"/>
+</suite>
+<status status="FAIL" start="2025-05-07T11:09:06.507171" elapsed="3.851824"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Day-01" id="s1" pass="0" fail="1" skip="0">Day-01</stat>
+<stat name="Testscripts" id="s1-s1" pass="0" fail="1" skip="0">Day-01.Testscripts</stat>
+<stat name="FirstTC" id="s1-s1-s1" pass="0" fail="1" skip="0">Day-01.Testscripts.FirstTC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

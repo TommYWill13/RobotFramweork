@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://conduit-realworld-example-app.fly.dev",
+      "localStorage": [
+        {
+          "name": "loggedUser",
+          "value": "{\"headers\":{\"Authorization\":\"Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IldpbGxpYW0uVGhvbWFzQGluLmJvc2NoLmNvbSIsImlhdCI6MTc0NzYzMzc3MX0.N5f1tB1m6cqxrEnZvtGZR2g0qowaP-nJ7bi2a7AIj64\"},\"isAuth\":true,\"loggedUser\":{\"email\":\"William.Thomas@in.bosch.com\",\"username\":\"William Thomas\",\"bio\":null,\"image\":null,\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IldpbGxpYW0uVGhvbWFzQGluLmJvc2NoLmNvbSIsImlhdCI6MTc0NzYzMzc3MX0.N5f1tB1m6cqxrEnZvtGZR2g0qowaP-nJ7bi2a7AIj64\"}}"
+        }
+      ]
+    }
+  ]
+}

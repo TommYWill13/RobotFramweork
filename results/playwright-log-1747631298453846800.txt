@@ -1,0 +1,40 @@
+{"level":30,"time":"2025-05-19T05:08:21.067Z","pid":19920,"hostname":"COB-C-016E7","msg":"Listening on 127.0.0.1:62642"}
+(node:19920) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-19T05:08:21.481Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-19T05:08:21.950Z","pid":19920,"hostname":"COB-C-016E7","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-05-19T05:08:21.950Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-19T05:08:21.950Z","pid":19920,"hostname":"COB-C-016E7","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-19T05:08:21.955Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-19T05:08:21.955Z","pid":19920,"hostname":"COB-C-016E7","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-19T05:08:21.966Z","pid":19920,"hostname":"COB-C-016E7","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:08:22.179Z","pid":19920,"hostname":"COB-C-016E7","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-19T05:08:22.180Z","pid":19920,"hostname":"COB-C-016E7","msg":"Changed active page"}
+{"level":30,"time":"2025-05-19T05:08:24.801Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-19T05:08:24.810Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-19T05:08:24.810Z","pid":19920,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with \"Load Delay\" in page."}
+{"level":30,"time":"2025-05-19T05:08:30.299Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method click"}
+{"level":30,"time":"2025-05-19T05:08:30.304Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-05-19T05:08:30.304Z","pid":19920,"hostname":"COB-C-016E7","msg":"timeout: 10000 state: load"}
+{"level":30,"time":"2025-05-19T05:08:30.599Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2025-05-19T05:08:30.603Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-19T05:08:30.604Z","pid":19920,"hostname":"COB-C-016E7","msg":"Strict mode is enabled, find Locator with \"Button Appearing After Delay\" in page."}
+{"level":30,"time":"2025-05-19T05:08:30.659Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method click"}
+{"level":30,"time":"2025-05-19T05:08:32.671Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.673Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.674Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.676Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.677Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.678Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.680Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.681Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.682Z","pid":19920,"hostname":"COB-C-016E7","msg":"Changed active context"}
+{"level":30,"time":"2025-05-19T05:08:32.682Z","pid":19920,"hostname":"COB-C-016E7","msg":"Changing current active page: page=96837d82-f174-4520-9c9e-6b571c7c4cb9"}
+{"level":30,"time":"2025-05-19T05:08:32.682Z","pid":19920,"hostname":"COB-C-016E7","msg":"Changed active page"}
+{"level":30,"time":"2025-05-19T05:08:32.684Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:08:32.701Z","pid":19920,"hostname":"COB-C-016E7","msg":"Removed page=8b499b9e-cbb6-416c-9199-1c0ccebd184a from context=67b722cb-26fa-448a-9e50-fd8f61810f42 page stack"}
+{"level":30,"time":"2025-05-19T05:08:32.741Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-19T05:08:32.747Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.747Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-19T05:08:32.825Z","pid":19920,"hostname":"COB-C-016E7","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-19T05:08:33.042Z","pid":19920,"hostname":"COB-C-016E7","msg":"End of node method closeAllBrowsers"}

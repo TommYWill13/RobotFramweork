@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-23T03:59:22.083967" rpa="false" schemaversion="5">
+<suite id="s1" name="Conduit-Robot-Project" source="C:\Automation\Robot_Framework\Conduit-Robot-Project">
+<suite id="s1-s1" name="Tests" source="C:\Automation\Robot_Framework\Conduit-Robot-Project\tests">
+<suite id="s1-s1-s1" name="Test" source="C:\Automation\Robot_Framework\Conduit-Robot-Project\tests\test.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Login Test Case" owner="login_page">
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T03:59:23.172466" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1420
+  }
+}</msg>
+<msg time="2025-05-23T03:59:23.528346" level="INFO">Starting Browser process C:\Users\thw5kor\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53285</msg>
+<msg time="2025-05-23T03:59:27.188597" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T03:59:27.188886" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1420}}</msg>
+<msg time="2025-05-23T03:59:27.189042" level="INFO">No browser was open. New browser was automatically opened when this context is created.</msg>
+<arg>viewport={"width": 1420, "height": 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T03:59:23.170881" elapsed="4.018335"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-23T03:59:27.190458" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Automation\\Robot_Framework\\Conduit-Robot-Project\\results\\browser\\traces\\temp\\525d2dd0-f82b-47a7-abad-d2830d882b28"}</msg>
+<msg time="2025-05-23T03:59:27.495246" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Automation\\Robot_Framework\\Conduit-Robot-Project\\results\\browser\\traces\\temp\\525d2dd0-f82b-47a7-abad-d2830d882b28"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-23T03:59:27.189416" elapsed="0.306507"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T03:59:30.217322" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<msg time="2025-05-23T03:59:30.217808" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://conduit-realworld-example-app.fly.dev/</arg>
+<arg>wait_until=load</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T03:59:27.496262" elapsed="2.721813"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T03:59:30.219093" level="INFO">Clicks the element 'ul.nav.navbar-nav.pull-xs-right &gt; li:nth-child(2)'.</msg>
+<arg>ul.nav.navbar-nav.pull-xs-right &gt; li:nth-child(2)</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:30.218242" elapsed="0.080418"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T03:59:30.299986" level="INFO">Types the text 'William.Thomas@in.bosch.com' in the given field.</msg>
+<arg>input[name='email']</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:30.298862" elapsed="0.099940"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-23T03:59:30.399719" level="INFO">Types the text 'Thomas@12' in the given field.</msg>
+<arg>input[name='password']</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:30.398996" elapsed="0.021953"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T03:59:30.421804" level="INFO">Clicks the element 'button.btn.btn-lg.btn-primary.pull-xs-right'.</msg>
+<arg>button.btn.btn-lg.btn-primary.pull-xs-right</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:30.421132" elapsed="0.031637"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T03:59:31.325953" level="INFO">Text: 'Popular Tags'</msg>
+<arg>div h6</arg>
+<arg>*=</arg>
+<arg>Popular Tags</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:30.452951" elapsed="0.873276"/>
+</kw>
+<kw name="Save Storage State" owner="Browser">
+<msg time="2025-05-23T03:59:31.341231" level="INFO">Current context state is saved to: C:\Automation\Robot_Framework\Conduit-Robot-Project\results\browser\state\fa185d0d-d806-417d-ab9b-9bab53fd8645.json</msg>
+<msg time="2025-05-23T03:59:31.341587" level="INFO">${state_File} = C:\Automation\Robot_Framework\Conduit-Robot-Project\results\browser\state\fa185d0d-d806-417d-ab9b-9bab53fd8645.json</msg>
+<var>${state_File}</var>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Saves the current active context storage state to a file.</doc>
+<status status="PASS" start="2025-05-23T03:59:31.326397" elapsed="0.015451"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2025-05-23T03:59:31.345690" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2025-05-23T03:59:31.347683" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2025-05-23T03:59:31.350110" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2025-05-23T03:59:31.352615" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2025-05-23T03:59:31.353116" level="INFO">Switching context to context=1dd2ba80-a8ab-4555-98cb-5d80e2fc3303 in CURRENT</msg>
+<msg time="2025-05-23T03:59:31.357072" level="INFO">Successfully changed active context: context=1dd2ba80-a8ab-4555-98cb-5d80e2fc3303</msg>
+<msg time="2025-05-23T03:59:31.388479" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2025-05-23T03:59:31.342048" elapsed="0.047068"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-23T03:59:31.391957" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "storageState": "C:\\Automation\\Robot_Framework\\Conduit-Robot-Project\\results\\browser\\state\\fa185d0d-d806-417d-ab9b-9bab53fd8645.json",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-05-23T03:59:31.568141" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-23T03:59:31.568589" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'storageState': 'C:\\Automation\\Robot_Framework\\Conduit-Robot-Project\\results\\browser\\state\\fa185d0d-d806-417d-ab9b-9bab53fd8645.json', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<arg>storageState=${state_File}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-23T03:59:31.389305" elapsed="0.179830"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-23T03:59:33.232067" level="INFO">Successfully initialized new page object and opened url: https://conduit-realworld-example-app.fly.dev/</msg>
+<arg>https://conduit-realworld-example-app.fly.dev/</arg>
+<arg>wait_until=load</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-23T03:59:31.569428" elapsed="1.663226"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-05-23T03:59:33.273649" level="INFO">Text: 'Popular Tags'</msg>
+<arg>div h6</arg>
+<arg>*=</arg>
+<arg>Popular Tags</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:33.232875" elapsed="0.041140"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-23T03:59:36.275375" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-23T03:59:33.274195" elapsed="3.001870"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-23T03:59:23.170241" elapsed="13.106096"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:23.169079" elapsed="13.107413"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Create Article" line="16">
+<kw name="Create New Article From Data">
+<kw name="Go To New Article Page" owner="home_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-05-23T03:59:36.291897" level="INFO">Successfully opened URL https://conduit-realworld-example-app.fly.dev/#/editor</msg>
+<arg>https://conduit-realworld-example-app.fly.dev/#/editor</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.286382" elapsed="0.006005"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:36.299905" level="INFO">Waited for Element with selector css=input[placeholder="Article Title"] at state visible</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.292541" elapsed="0.007704"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:36.285444" elapsed="0.014928"/>
+</kw>
+<kw name="Create New Article" owner="article_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:36.301947" level="INFO">Fills the text 'Robot1' in the given field.</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>${title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.301378" elapsed="0.011483"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:36.313794" level="INFO">Fills the text 'Test Desc 1' in the given field.</msg>
+<arg>css=input[placeholder="What's this article about?"]</arg>
+<arg>${description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.313063" elapsed="0.009649"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:36.323674" level="INFO">Fills the text 'First article.' in the given field.</msg>
+<arg>css=textarea[placeholder="Write your article (in markdown)"]</arg>
+<arg>${body}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.322929" elapsed="0.010434"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:36.334272" level="INFO">Fills the text 'test' in the given field.</msg>
+<arg>css=input[placeholder="Enter tags"]</arg>
+<arg>${tags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.333556" elapsed="0.007460"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T03:59:36.341763" level="INFO">Clicks the element 'text=Publish Article'.</msg>
+<arg>text=Publish Article</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.341180" elapsed="0.048225"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:37.211708" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Robot1 at state visible</msg>
+<arg>css=h1 &gt;&gt; text=${title}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:36.389603" elapsed="0.822594"/>
+</kw>
+<arg>${title}</arg>
+<arg>${description}</arg>
+<arg>${body}</arg>
+<arg>${tags}</arg>
+<status status="PASS" start="2025-05-23T03:59:36.300514" elapsed="0.911899"/>
+</kw>
+<arg>title=Robot1</arg>
+<arg>description=Test Desc 1</arg>
+<arg>body=First article.</arg>
+<arg>tags=test</arg>
+<status status="PASS" start="2025-05-23T03:59:36.284210" elapsed="0.928318"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:36.276624" elapsed="0.936505"/>
+</test>
+<test id="s1-s1-s1-t2" name="Create Article" line="16">
+<kw name="Create New Article From Data">
+<kw name="Go To New Article Page" owner="home_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-05-23T03:59:37.229371" level="INFO">Successfully opened URL https://conduit-realworld-example-app.fly.dev/#/editor</msg>
+<arg>https://conduit-realworld-example-app.fly.dev/#/editor</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.223809" elapsed="0.006359"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:37.234975" level="INFO">Waited for Element with selector css=input[placeholder="Article Title"] at state visible</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.230355" elapsed="0.004969"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:37.223434" elapsed="0.012033"/>
+</kw>
+<kw name="Create New Article" owner="article_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:37.237155" level="INFO">Fills the text 'Robot2' in the given field.</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>${title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.236321" elapsed="0.008596"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:37.245892" level="INFO">Fills the text 'Test Desc 2' in the given field.</msg>
+<arg>css=input[placeholder="What's this article about?"]</arg>
+<arg>${description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.245098" elapsed="0.017635"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:37.263737" level="INFO">Fills the text 'Second article.' in the given field.</msg>
+<arg>css=textarea[placeholder="Write your article (in markdown)"]</arg>
+<arg>${body}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.262964" elapsed="0.009087"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:37.272969" level="INFO">Fills the text 'robot' in the given field.</msg>
+<arg>css=input[placeholder="Enter tags"]</arg>
+<arg>${tags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.272336" elapsed="0.012159"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T03:59:37.285373" level="INFO">Clicks the element 'text=Publish Article'.</msg>
+<arg>text=Publish Article</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.284691" elapsed="0.035457"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:38.156444" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Robot2 at state visible</msg>
+<arg>css=h1 &gt;&gt; text=${title}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:37.320342" elapsed="0.836930"/>
+</kw>
+<arg>${title}</arg>
+<arg>${description}</arg>
+<arg>${body}</arg>
+<arg>${tags}</arg>
+<status status="PASS" start="2025-05-23T03:59:37.235610" elapsed="0.921946"/>
+</kw>
+<arg>title=Robot2</arg>
+<arg>description=Test Desc 2</arg>
+<arg>body=Second article.</arg>
+<arg>tags=robot</arg>
+<status status="PASS" start="2025-05-23T03:59:37.222862" elapsed="0.934878"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:37.218498" elapsed="0.940045"/>
+</test>
+<test id="s1-s1-s1-t3" name="Create Article" line="16">
+<kw name="Create New Article From Data">
+<kw name="Go To New Article Page" owner="home_page">
+<kw name="Go To" owner="Browser">
+<msg time="2025-05-23T03:59:38.173812" level="INFO">Successfully opened URL https://conduit-realworld-example-app.fly.dev/#/editor</msg>
+<arg>https://conduit-realworld-example-app.fly.dev/#/editor</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.169096" elapsed="0.005066"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:38.178634" level="INFO">Waited for Element with selector css=input[placeholder="Article Title"] at state visible</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.174341" elapsed="0.004600"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:38.168736" elapsed="0.010318"/>
+</kw>
+<kw name="Create New Article" owner="article_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:38.180271" level="INFO">Fills the text 'Robot3' in the given field.</msg>
+<arg>css=input[placeholder="Article Title"]</arg>
+<arg>${title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.179790" elapsed="0.006872"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:38.187935" level="INFO">Fills the text 'Test Desc 3' in the given field.</msg>
+<arg>css=input[placeholder="What's this article about?"]</arg>
+<arg>${description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.187072" elapsed="0.009156"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:38.197092" level="INFO">Fills the text 'Third article.' in the given field.</msg>
+<arg>css=textarea[placeholder="Write your article (in markdown)"]</arg>
+<arg>${body}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.196413" elapsed="0.008749"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-05-23T03:59:38.206000" level="INFO">Fills the text 'data' in the given field.</msg>
+<arg>css=input[placeholder="Enter tags"]</arg>
+<arg>${tags}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.205348" elapsed="0.009076"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-05-23T03:59:38.216509" level="INFO">Clicks the element 'text=Publish Article'.</msg>
+<arg>text=Publish Article</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.214919" elapsed="0.042545"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-23T03:59:39.107421" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Robot3 at state visible</msg>
+<arg>css=h1 &gt;&gt; text=${title}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-23T03:59:38.257650" elapsed="0.850378"/>
+</kw>
+<arg>${title}</arg>
+<arg>${description}</arg>
+<arg>${body}</arg>
+<arg>${tags}</arg>
+<status status="PASS" start="2025-05-23T03:59:38.179186" elapsed="0.929057"/>
+</kw>
+<arg>title=Robot3</arg>
+<arg>description=Test Desc 3</arg>
+<arg>body=Third article.</arg>
+<arg>tags=data</arg>
+<status status="PASS" start="2025-05-23T03:59:38.168214" elapsed="0.940155"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:38.164661" elapsed="0.944181"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-05-23T03:59:39.382414" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-23T03:59:39.116015" elapsed="0.266743"/>
+</kw>
+<status status="PASS" start="2025-05-23T03:59:22.112161" elapsed="17.270699"/>
+</suite>
+<status status="PASS" start="2025-05-23T03:59:22.109954" elapsed="17.288870"/>
+</suite>
+<status status="PASS" start="2025-05-23T03:59:22.090893" elapsed="17.309199"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Conduit-Robot-Project" id="s1" pass="3" fail="0" skip="0">Conduit-Robot-Project</stat>
+<stat name="Tests" id="s1-s1" pass="3" fail="0" skip="0">Conduit-Robot-Project.Tests</stat>
+<stat name="Test" id="s1-s1-s1" pass="3" fail="0" skip="0">Conduit-Robot-Project.Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-23T03:59:37.218592" level="WARN">Multiple tests with name 'Create Article' executed in suite 'Conduit-Robot-Project.Tests.Test'.</msg>
+<msg time="2025-05-23T03:59:38.164704" level="WARN">Multiple tests with name 'Create Article' executed in suite 'Conduit-Robot-Project.Tests.Test'.</msg>
+</errors>
+</robot>
